@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
+import Header from "./header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,30 +30,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
-        <header className="sticky top-0 z-50 flex gap-6 flex-wrap items-end p-6">
-          <h1 className="text-2xl font-bold">
-            Shelby Kauth | <span className="title">Software Engineer</span>
-          </h1>
-          <nav>
-            <ul className="flex gap-4">
-              <li>
-                <Link href="/">Home</Link>
-              </li>
-              <li>
-                <Link href="/projects">Projects</Link>
-              </li>
-              <li>
-                <Link href="/experience">Experience</Link>
-              </li>
-              <li>
-                <Link href="/about">About</Link>
-              </li>
-              <li>
-                <Link href="/contact">Contact</Link>
-              </li>
-            </ul>
-          </nav>
-        </header>
+        <Header />
 
         <div className="flex-grow font-sans grid grid-rows-[20px_1fr_20px] justify-items-center p-8 py-10 sm:p-20 sm:py-4">
           <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
