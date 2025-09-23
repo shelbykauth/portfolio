@@ -36,18 +36,19 @@ export default function RootLayout({
           <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
             {children}
           </main>
-          <footer className="row-start-3 flex gap-1 flex-wrap items-center justify-center sticky bottom-0">
-            &copy; 2025 Shelby Kauth | Built with
-            <Image
-              className="dark:invert"
-              src="/next.svg"
-              alt="Next.js logo"
-              width={54}
-              height={16}
-            />
-            |<Link href="/about/attributions">Attributions</Link>
-          </footer>
         </div>
+
+        <footer className="flex gap-1 flex-wrap items-center justify-center sticky bottom-0 p-6 bg-black">
+          &copy; 2025 Shelby Kauth | Built with
+          <Image
+            className="dark:invert"
+            src="/next.svg"
+            alt="Next.js logo"
+            width={54}
+            height={16}
+          />
+          |<Link href="/about/attributions">Attributions</Link>
+        </footer>
       </body>
     </html>
   );
