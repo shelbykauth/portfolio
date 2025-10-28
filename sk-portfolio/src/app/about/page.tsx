@@ -5,8 +5,36 @@ export default function About() {
   return (
     <>
       <h1 className="text-5xl">About Me</h1>
+      <h2 className="text-4xl">Personal</h2>
       <p className="text-lg">
-        Programming runs through my veins.
+        I live an breathe code, and tend to make a habit of 
+      <h2 className="text-4xl">Work History</h2>
+      <p className="text-lg">
+        {`
+        Programming runs through my veins. I sat with my mother as she got her
+        online degree in Web Design, and I worked with her as I grew up. Two
+        decades later, I'm a full-stack software engineer with a passion for
+        getting computers to act in a reliable, repeatable way (aka:
+        programming).
+        `}
+      </p>
+      <p className="text-lg">
+        {`
+        From 2018 to 2025, I worked at Cynerge Consulting, where I upgraded,
+        maintained, and built new web applications for the US Forest Service.
+        Angular, Simplr, Vue, Java, .NET, Node.js, SQL Server, Postgres,
+        MongoDB, AWS, and Jenkins were just some of the technologies I used. I
+        led development efforts for the CIAO project, an
+        Angular/Node.js/Postgres application hosted in Docker Containers. I
+        wrote the Jenkins script to deploy to Kubernetes. When CIAO was greenlit
+        for Enterprise-level expansion, I helped lead a team of 3 main and 4
+        drop-in developers to enable multi-tenancy and add security layers for
+        public-facing access. The transition from Kubernetes to AWS ECS was
+        seamless.
+      `}
+      </p>
+      <p className="text-lg">
+        {`I'm a software engineer with a passion for programming and a love of learning. I graduated from the University of Minnesota with a Bachelor's degree in Computer Science in 2013. Since then, I've worked in a variety of roles and industries, always striving to improve my skills and knowledge.`}
         <Link
           className="underline inline-block mx-1"
           target="_blank"
