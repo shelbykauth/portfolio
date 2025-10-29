@@ -1,4 +1,3 @@
-import Image from "next/image";
 import ProjectCard from "./project-card";
 
 export default function Projects() {

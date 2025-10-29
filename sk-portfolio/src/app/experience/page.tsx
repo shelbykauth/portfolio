@@ -6,7 +6,7 @@ export default function Experience() {
       Experience Page
       <Image
         className="dark:invert"
-        src="/next.svg"
+        src="/images/next.svg"
         alt="Next.js logo"
         width={180}
         height={38}
@@ -33,7 +33,7 @@ export default function Experience() {
         >
           <Image
             className="dark:invert"
-            src="/vercel.svg"
+            src="/images/vercel.svg"
             alt="Vercel logomark"
             width={20}
             height={20}

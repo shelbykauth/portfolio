@@ -42,7 +42,7 @@ export default function RootLayout({
           &copy; 2025 Shelby Kauth | Built with
           <Image
             className="dark:invert"
-            src="/next.svg"
+            src="/images/next.svg"
             alt="Next.js logo"
             width={54}
             height={16}

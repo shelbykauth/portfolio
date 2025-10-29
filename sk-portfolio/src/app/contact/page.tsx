@@ -15,7 +15,7 @@ export default function Contact() {
             href="mailto:shelby.kauth@gmail.com"
           >
             <Image
-              src="/socials/icons8-dotty-email-80.png"
+              src="/images/socials/icons8-dotty-email-80.png"
               alt="Email"
               width={80}
               height={80}
@@ -32,7 +32,7 @@ export default function Contact() {
             href="https://www.linkedin.com/in/shelby-kauth/"
           >
             <Image
-              src="/socials/icons8-dotty-linkedin-80.png"
+              src="/images/socials/icons8-dotty-linkedin-80.png"
               alt="LinkedIn"
               width={80}
               height={80}
