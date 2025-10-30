@@ -9,7 +9,7 @@ export default function Attributions() {
         <li className="flex gap-5">
           <Image
             className="inline-block dark:invert"
-            src="/images/next.svg"
+            src="images/next.svg"
             alt="Next.js logo"
             width={216}
             height={64}
@@ -23,21 +23,21 @@ export default function Attributions() {
         <li>
           <Image
             className="inline-block dark:invert"
-            src="/images/socials/icons8-dotty-email-80.png"
+            src="images/socials/icons8-dotty-email-80.png"
             alt="email logo"
             width={80}
             height={80}
           />
           <Image
             className="inline-block dark:invert"
-            src="/images/socials/icons8-dotty-github-80.png"
+            src="images/socials/icons8-dotty-github-80.png"
             alt="github logo"
             width={80}
             height={80}
           />
           <Image
             className="inline-block dark:invert"
-            src="/images/socials/icons8-dotty-linkedin-80.png"
+            src="images/socials/icons8-dotty-linkedin-80.png"
             alt="linkedin logo"
             width={80}
             height={80}

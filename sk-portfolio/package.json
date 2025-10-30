@@ -4,13 +4,13 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "next dev --turbopack",
+    "start": "next dev --turbopack",
     "build": "next build --turbopack",
-    "start": "next start",
-    "serve-static": "serve",
+    "serve-static": "nodemon test-serve.js -- ",
     "lint": "eslint"
   },
   "dependencies": {
+    "dotenv": "^17.2.3",
     "next": "15.5.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
@@ -21,9 +21,11 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cross-env": "^10.1.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "express": "^5.1.0",
+    "nodemon": "^3.1.10",
     "serve": "^14.2.5",
     "tailwindcss": "^4",
     "typescript": "^5"
