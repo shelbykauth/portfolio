@@ -68,7 +68,7 @@ jobs:
         working-directory: sk-portfolio
       - name: Build with Next.js
         env:
-          PAGES_BASE_PATH: portfolio
+          PAGES_BASE_PATH: /portfolio
         run: npm run build
         working-directory: sk-portfolio
       - name: Upload artifact
