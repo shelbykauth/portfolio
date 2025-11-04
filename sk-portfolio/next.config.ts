@@ -21,6 +21,18 @@ const nextConfig: NextConfig = {
    * Utilized to build for different deployment paths.
    * @see https://github.com/nextjs/deploy-github-pages/blob/main/next.config.ts
    */
+
+  /**
+   * load assets as pure strings
+   */
+  turbopack: {
+    rules: {
+      "*.md": {
+        loaders: ["raw-loader"],
+        as: "*.js",
+      },
+    },
+  },
 };
 
 export default nextConfig;

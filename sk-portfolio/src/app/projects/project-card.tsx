@@ -1,13 +1,5 @@
 import Image from "next/image";
 
-export type Project = {
-  title: string;
-  description: string;
-  imageUrl: string;
-  projectUrl: string;
-  side: "left" | "right";
-};
-
 const loremIpsum = [
   `
 
