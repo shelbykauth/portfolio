@@ -1,6 +1,6 @@
 import ProjectCard from "./project-card";
 
-const projectList: Project[] = [
+const projectList: Omit<Project, "side">[] = [
   {
     title: "CIAO",
     imageUrl: "images/projects/ciao-thumbnail.png",

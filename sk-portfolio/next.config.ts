@@ -3,7 +3,13 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const basePath = process.env.PAGES_BASE_PATH || undefined;
-const distDir = basePath ? path.join("out" + basePath) : "out/_";
+const distDir = (() => {
+  if (process.env.NODE_ENV === "production") {
+    return basePath ? path.join("out" + basePath) : "out/_";
+  } else {
+    return undefined;
+  }
+})();
 
 const nextConfig: NextConfig = {
   /* config options here */
