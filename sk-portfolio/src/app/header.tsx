@@ -26,15 +26,16 @@ export function HeaderLink({ href, title }: { href: string; title: string }) {
 export default function Header() {
   return (
     <header className="sticky top-0 z-50 flex gap-6 flex-wrap items-end p-6 bg-black">
-      <h1 className="text-2xl font-bold">
-        Shelby Kauth | <span className="title">Software Engineer</span>
-      </h1>
+      <Link href="/">
+        <h1 className="text-2xl font-bold">
+          Shelby Kauth | <span className="title">Software Engineer</span>
+        </h1>
+      </Link>
       <nav>
         <ul className="flex gap-4">
-          <HeaderLink href="/" title="Home" />
+          <HeaderLink href="/about" title="About" />
           <HeaderLink href="/projects" title="Projects" />
           <HeaderLink href="/experience" title="Experience" />
-          <HeaderLink href="/about" title="About" />
           <HeaderLink href="/contact" title="Contact" />
         </ul>
       </nav>
