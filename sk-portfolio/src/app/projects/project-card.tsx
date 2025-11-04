@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export type Project = {
   title: string;
   description: string;
@@ -37,15 +39,24 @@ export default function ProjectCard(project: Project) {
         project.side === "left" ? "sm:flex-row" : "sm:flex-row-reverse"
       }`}
     >
-      <div className={`basis-1/3 ${cardBorderTailwinds}`}>
-        Lorem Ipsume Dorem Sue
-      </div>
+      {project.imageUrl ? (
+        <Image
+          src={project.imageUrl}
+          alt={project.title}
+          width="300"
+          height="200"
+          className="self-start"
+        />
+      ) : (
+        <h2 className="5xl basis-1/3">{project.title}</h2>
+      )}
       <div className={`basis-2/3 ${cardBorderTailwinds}`}>
-        {loremIpsum.map((text, index) => (
+        {/* {loremIpsum.map((text, index) => (
           <p key={index} className="">
             {text}
           </p>
-        ))}
+        ))} */}
+        {project.description}
       </div>
     </div>
   );
