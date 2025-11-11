@@ -1,6 +1,10 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
+@layer components {
+  @import "github-fork-ribbon-css/gh-fork-ribbon.css";
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

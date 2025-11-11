@@ -34,6 +34,12 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
       >
+        <a
+          className="github-fork-ribbon right-top before:bg-orange-400"
+          data-ribbon="Under Construction"
+        >
+          Under Construction
+        </a>
         <Header />
 
         <div className="flex-grow font-sans grid grid-rows-[20px_1fr_20px] justify-items-center p-8 py-10 sm:p-20 sm:py-4">
