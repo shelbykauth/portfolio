@@ -4,6 +4,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "../globals.css";
 import Link from "next/link";
 import Header from "../header";
+import BackgroundContainer from "../background-container/background-container";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,12 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark:scheme-dark">
       <head>
         <base href={process.env.PAGES_BASE_PATH + "/"} />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col overflow-clip`}
       >
         <a
           className="github-fork-ribbon right-top before:bg-orange-400"
@@ -42,11 +43,13 @@ export default function RootLayout({
         </a>
         <Header />
 
-        <div className="flex-grow font-sans grid grid-rows-[20px_1fr_20px] justify-items-center p-8 py-10 sm:p-20 sm:py-4">
-          <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-            {children}
-          </main>
-        </div>
+        <BackgroundContainer>
+          <div className="flex-grow font-sans grid grid-rows-[20px_1fr_20px] justify-items-center p-8 py-10 sm:p-20 sm:py-4">
+            <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+              {children}
+            </main>
+          </div>
+        </BackgroundContainer>
 
         <footer className="flex gap-1 flex-wrap items-center justify-center sticky bottom-0 p-6 bg-black">
           &copy; 2025 Shelby Kauth | Built with

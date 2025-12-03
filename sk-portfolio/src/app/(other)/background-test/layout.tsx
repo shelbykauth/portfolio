@@ -6,11 +6,11 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="h-full w-full dark:scheme-dark">
+    <html lang="en" className="h-screen w-screen dark:scheme-dark">
       <head>
         <base href={process.env.PAGES_BASE_PATH + "/"} />
       </head>
-      <body className="h-full w-full overflow-clip">
+      <body className="h-screen w-screen overflow-clip">
         <div className="h-full w-full relative">{children}</div>
       </body>
     </html>

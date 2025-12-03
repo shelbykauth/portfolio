@@ -4,9 +4,11 @@ import Link from "next/link";
 export default function Contact() {
   return (
     <>
-      <h1 className="text-5xl">Contact Me</h1>
-      <p className="text-lg">{"I'd love to hear from you!"}</p>
-      <ul className="flex flex-col gap-10">
+      <h1 className="text-5xl rounded-lg bg-[background]/80 p-2">Contact Me</h1>
+      <p className="text-lg rounded-lg bg-[background]/80 p-2">
+        {"I'd love to hear from you!"}
+      </p>
+      <ul className="flex flex-col gap-10 rounded-lg bg-[background]/80 p-2">
         <li>
           <Link
             className="inline-block h-full w-full"

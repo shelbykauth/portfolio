@@ -1,8 +1,10 @@
 export default function Experience() {
   return (
     <>
-      <h1 className="text-4xl mr-auto ml-auto">Work Experience</h1>
-      <table className="[&_td]:p-6">
+      <h1 className="text-4xl mr-auto ml-auto bg-[background]/80 rounded-lg">
+        Work Experience
+      </h1>
+      <table className="[&_td]:p-6 bg-[background]/80 rounded-lg">
         <thead>
           <tr className="sr-only">
             <th>Dates</th>

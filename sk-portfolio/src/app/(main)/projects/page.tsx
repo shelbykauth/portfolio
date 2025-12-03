@@ -48,8 +48,10 @@ const projectList: Omit<Project, "side">[] = [
 export default function Projects() {
   return (
     <>
-      <h1 className="text-5xl">Projects</h1>
-      <p className="text-lg">{"Here's a list of my projects!"}</p>
+      <h1 className="text-5xl px-2 rounded-lg bg-[background]/80">Projects</h1>
+      <p className="text-lg px-2 rounded-lg bg-[background]/80">
+        {"Here's a list of my projects!"}
+      </p>
       <div className="flex flex-col gap-4 items-stretch">
         {projectList.map((project, index) => (
           <ProjectCard

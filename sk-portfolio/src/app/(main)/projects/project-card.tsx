@@ -42,7 +42,7 @@ export default function ProjectCard(project: Project) {
       ) : (
         <h2 className="5xl basis-1/3">{project.title}</h2>
       )}
-      <div className={`basis-2/3 ${cardBorderTailwinds}`}>
+      <div className={`basis-2/3 ${cardBorderTailwinds} bg-[background]/80`}>
         {/* {loremIpsum.map((text, index) => (
           <p key={index} className="">
             {text}

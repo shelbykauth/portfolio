@@ -65,7 +65,6 @@ export async function drawSingleBackgroundLayer(
   ctx: CanvasRenderingContext2D,
   config: BgConfig
 ) {
-  console.log(config);
   ctx.clearRect(0, 0, config.width, config.height);
   for (let i = 0; i < config.concentration; i++) {
     const brightness =
